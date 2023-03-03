@@ -2,6 +2,9 @@
 import { Box,Button,Typography,styled } from '@mui/material';
 import{ShoppingCart} from '@mui/icons-material';
 
+// components
+import LoginDialog from '../login/LoginDialog';
+
 const Wrapper = styled(Box)`
 display:flex;
 margin:0 3% 0 auto;
@@ -41,7 +44,7 @@ const CustomButtons = () => {
       Cart
     </Typography>
    </Container>
-   
+   <LoginDialog/>
   
    </Wrapper>
 
