@@ -20,7 +20,7 @@ color:#2874f0;
 background:#ffffff;
 text-transform:none;
 padding:5px 40px;
-border-radius:20px;
+border-radius:2px;
 box-shadow:none;
 font-wieight:600;
 height:32px;
@@ -29,9 +29,9 @@ height:32px;
 const CustomButtons = () => {
   return (
    <Wrapper>
-    <Button variant = "container">
+    <LoginButton>
       Login
-    </Button>
+    </LoginButton>
     <Typography style={{ marginTop:3,width:135}}>Become a Seller</Typography>
     <Typography style={{marginTop:3}}>More</Typography>
 
