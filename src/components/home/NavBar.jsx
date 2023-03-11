@@ -2,7 +2,7 @@
 
 import {Box,styled, Typography}  from '@mui/material';
 
-import {navData} from '../../constants/data';
+import {navData} from '../../constant/data';
 
 const Component =styled(Box)`
 display:flex;
