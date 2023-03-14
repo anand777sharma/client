@@ -36,13 +36,14 @@ const Banner = () => {
             autoPlay={true}
             autoPlaySpeed={4000}
             keyBoardControl={true}
+            slidesToSlide={1}
             containerClass="carousel-container"
             dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-40-px"
         >
             {
                 bannerData.map(data => (
-                    <Image src={data.url} alt="banner" />
+                    <Image  src={data.url} alt="banner" id={data.id}/>
                 ))
             }
         </Carousel>
