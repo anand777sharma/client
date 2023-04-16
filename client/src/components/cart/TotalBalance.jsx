@@ -33,21 +33,29 @@ font-weight:500;
 
 const TotalBalance = ({ cartItems }) => {
   const [price,setPrice]= useState(0);
+  // const [price]= useState(0);
   const [discount,setDiscount] = useState(0);
+  // const [discount] = useState(0);
 
 useEffect(()=>
-{totalAmount();},[cartItems]
-)
-
-  const totalAmount =()=>{
+{
+  const totalAmount = ()=>{
     let price =0,discount =0;
     cartItems.map(item =>{
       price +=item.price.mrp;
       discount += (item.price.mrp - item.price.cost);
+      return price;
     });
+    
     setPrice(price);
     setDiscount(discount);
+
   }
+  totalAmount();
+},[cartItems]
+);
+
+
 
   return (
     <Box>

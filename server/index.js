@@ -17,7 +17,7 @@ const app = express();
 
 app.use('/',Router);
 
-const PORT =8000;
+const PORT =process.env.PORT || 8000;
 
 
 const URI =process.env.DB_URI;
