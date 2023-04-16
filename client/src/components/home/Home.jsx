@@ -19,7 +19,8 @@ background:#F2F2F2;`
 
 const Home = () => {
 
-    const {products,error}=useSelector(state=>state.getProducts);
+    // const {products,error}=useSelector(state=>state.getProducts);
+    const {products}=useSelector(state=>state.getProducts);
     // console.log(products);
     const dispatch = useDispatch();
 

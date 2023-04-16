@@ -38,7 +38,8 @@ const Actionitem = ({product}) => {
 
   const navigate = useNavigate();
 const dispatch = useDispatch();
-const [quantity,setQuantity] = useState(1);
+// const [quantity,setQuantity] = useState(1);
+const [quantity] = useState(1);
 
 const {id} = product;
 
