@@ -20,10 +20,10 @@ app.use('/',Router);
 const PORT =8000;
 
 
-const username =process.env.DB_USERNAME;
-const password =process.env.DB_PASSWORD;
+const URI =process.env.DB_URI;
 
-Connection(username, password);
+
+Connection(URI);
 
 app.listen(PORT,()=> console.log(`Server is sussessfully on ${PORT}`));
 
