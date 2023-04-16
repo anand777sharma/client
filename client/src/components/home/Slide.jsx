@@ -2,7 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Countdown from 'react-countdown';
 import {Link} from 'react-router-dom';
-
+import Loader from "../Loader";
 
 import { Box, Typography, Button, Divider } from '@mui/material';
 import styled from "@emotion/styled";
@@ -60,6 +60,7 @@ margin-top:5px;`
 
 
 const Slide = ({ products ,title,timer }) => {
+    if(!products?.length) return <Loader />;
     const timerURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg';
     const renderer = ({ hours, minutes, seconds }) => {
         return <Box variant="span">{hours} : {minutes} : {seconds} Left</Box>;

@@ -3,7 +3,8 @@ import axios from 'axios';
 import * as actionTypes from '../constants/productConstant';
 
 
-const URL ='http://localhost:8000'|| 'https://klipcart-database.onrender.com/';
+// const URL ='http://localhost:8000'|| 'https://klipcart-database.onrender.com';
+const URL ='https://klipcart-database.onrender.com';
 
 export const  getProducts = ()=> async (dispatch)=>{
     try{
