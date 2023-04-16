@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-// const url ='http://localhost:8000'|| 'https://klipcart-database.onrender.com';
-const url ='https://klipcart-database.onrender.com';
+const url ='http://localhost:8000'|| 'https://klipcart-database.onrender.com';
+// const url ='https://klipcart-database.onrender.com';
 
 export const authenticateSignup = async (data) => {
     try {
