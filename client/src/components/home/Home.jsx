@@ -34,7 +34,7 @@ const Home = () => {
             <Component>
                 <Banner/>
                 <Slide products = {products||[]} title="Deal Of The Day" timer={true}/>
-                <MidSlide products = {products} title="Discounts for You" timer={false}/>
+                <MidSlide products = {products||[]} title="Discounts for You" timer={false}/>
                 <Slide products = {products||[]} title="Suggesting Items" timer={false}/>
                 <MidSection/>
                 <Slide products = {products||[]} title="Top Selection" timer={false}/>
